@@ -1,37 +1,45 @@
 ---
 title: Home
 layout: home
-nav_order: 0 
+nav_order: 0
 ---
+
 # Welcome to Learn Metal
 
-Welcome to **Learn Metal**, an open-source tutorial site dedicated to learning and mastering Apple’s Metal graphics API, specifically its newest iteration.
-Whether you are interested in learning Metal for academic purposes or just as a hobby for your personal projects, feel free to explore this website i'm making in my free time, purely for the love of programming and sharing what i learn along the way :)
+**Learn Metal** is a personal, open-source project dedicated to teaching Apple’s Metal graphics API — especially its latest version.  
+Whether you're diving into graphics programming for fun, study, or your next big idea, feel free to explore this site. I’m building it in my spare time, purely out of passion for coding and sharing what I learn along the way.
 
-**But first, the proper acknowledgements**
+---
 
-This website probably wouldn't even exist if it wasn't for the wonderful work by [Joey De Vries](http://joeydevries.com/#home) regarding [learnopengl](https://learnopengl.com) and many other brilliant websites like [vulkan-tutorial](https://vulkan-tutorial.com) and [directxtutorial](http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-1).
+### A Quick Thank You First
 
-These have been subjects of my studies for many years in the past, and they are also the main reason why i myself and making this in the first  place!
+This site wouldn’t exist without the amazing work of [Joey De Vries](http://joeydevries.com/#home) and his legendary [LearnOpenGL](https://learnopengl.com) tutorial.  
+I also owe a lot to other brilliant resources like [vulkan-tutorial](https://vulkan-tutorial.com) and [directxtutorial](http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-1).
 
-Soooo thanks to all the authors! 
+These projects were my go-to study materials for years, and they’re a huge reason why I’m creating this in the first place — to pay it forward.
 
-**"Ok but why should i follow these tutorials?"**
+Massive thanks to all the authors!
 
-At the time of writing this (Fri Jul 18 2025), there really aren't that many resources to properly learn the Metal Graphics Api, apart from the most common results you get when you search for it:
-- [https://metaltutorial.com](https://metaltutorial.com) - great, but i think it could be more detailed
-- [Apple's Official Documentation](https://developer.apple.com/documentation/Metal/) - great stuff, but it's really difficult to connect everything together, so not so intuitive
+---
 
-So naturally, me being interested in learning Metal from the ground up, but also wanting to fill a void that hasn't been filled yet, i've thought about creating this website in hopes that i understand what i'm doing better and hopefully, help someone else in the process as well :)
+### “Okay, but why should I follow this tutorial?”
+
+As of **July 18, 2025**, high-quality, beginner-friendly resources on Metal are still hard to come by. Most searches lead you to:
+
+- [https://metaltutorial.com](https://metaltutorial.com) — great, but could go deeper.
+- [Apple’s Official Documentation](https://developer.apple.com/documentation/Metal/) — thorough, but tough to piece together if you're just starting out.
+
+I wanted to learn Metal from the ground up *and* help fill this gap in the ecosystem. So this site is both a personal learning journey and a resource for anyone who wants a clearer, more structured way into Metal development.
+
+If it helps you, then mission accomplished.
 
 ---
 
 ### Support This Project
 
-Learn Metal is free, and will always be free, for anyone who wants to start with graphics programming using the Metal graphics api.
-
-If you find this site helpful, please consider supporting me by buying a coffee:
+**Learn Metal** is — and always will be — completely free.  
+If you find it useful and want to support my work, consider buying me a coffee:
 
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="theboredprog" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
-Thanks!!
+Thank you!
