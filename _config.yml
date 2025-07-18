@@ -1,6 +1,6 @@
 title: Learn Metal
 description: A modern, open-source tutorial site designed to teach Apple’s Metal graphics API
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 permalink: pretty
 
