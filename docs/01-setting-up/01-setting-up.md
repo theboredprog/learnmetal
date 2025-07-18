@@ -1,6 +1,9 @@
-# 01 – Setting Up Your Environment
+# 01 – Setting up your enviroment
 
-Welcome to your first steps into Metal development on macOS. This tutorial will help you set up a proper and efficient development environment to start building high-performance graphics applications.
+Whooohooo! 🥳
+Welcome to your very first few steps into Metal development on macOS!
+ 
+This tutorial will hopefully help you set up a proper and efficient development environment so you can start building high-performance graphics applications.
 
 ## Why Xcode?
 
