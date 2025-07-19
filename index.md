@@ -130,12 +130,6 @@ Result:
 let device = MTLCreateSystemDefaultDevice()
 ```
 
-Use `{: .no-copy }` to disable the copy button:
-
-```swift {: .no-copy }
-let secret = "don't copy me"
-```
-
 #### 🧭 Navigation and Links
 
 ```markdown
