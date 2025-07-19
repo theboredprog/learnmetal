@@ -1,0 +1,17 @@
+// _sass/custom/custom.scss
+@include mq(lg) {
+  .side-bar {
+    width: calc((70% - #{$nav-width + $content-width}) / 2 + #{$nav-width}) !important;
+  }
+}
+
+@include mq(lg) {
+  .main {
+    margin-left: calc(16rem + 1rem) !important; // adjust to match new sidebar width
+    max-width: 100% !important; // optional, for more breathing room
+  }
+
+  .main-content {
+    max-width: 100% !important; // allow full width usage inside main
+  }
+}
