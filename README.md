@@ -1,5 +1,7 @@
 # Learn Metal
 
+![splash-logo-1](splash-logo-2.png)
+
 Learn Metal is a modern, open-source tutorial site dedicated to teaching Apple’s Metal graphics API from the ground up.
 
 ## About
