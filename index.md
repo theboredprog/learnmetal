@@ -14,18 +14,20 @@ Whether you're diving into graphics programming for fun, study, or your next big
 Welcome to **Learn Metal**, an open-source tutorial site dedicated to learning and mastering Apple’s Metal graphics API, specifically its newest iteration.
 Whether you are interested in learning Metal for academic purposes or just as a hobby for your personal projects, feel free to explore this website i'm making in my free time, purely for the love of programming and sharing what i learn along the way :)
 
----
+### Website Progress
+
+{% include progress-bar.html %}
 
 ### A Quick Thank You First
 
-This site wouldn’t exist without the amazing work of [Joey De Vries](http://joeydevries.com/#home) and his legendary [LearnOpenGL](https://learnopengl.com) tutorial.  
+Just as a disclaimer, this site is built using a **modified version** of the [Just the Docs Jekyll theme](https://github.com/just-the-docs/just-the-docs), adapted to best fit the purposes of this project - just to be clear, i'm not a great webdev, so a big thanks goes to them! :)
+
+Now that that's out of the way, I'd like to say that this website probably wouldn’t even exist if it wasn't for the amazing work of [Joey De Vries](http://joeydevries.com/#home) and his legendary [LearnOpenGL](https://learnopengl.com) tutorial series.  
 I also owe a lot to other brilliant resources like [vulkan-tutorial](https://vulkan-tutorial.com) and [directxtutorial](http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-1).
 
 These projects were my go-to study materials for years, and they’re a huge reason why I’m creating this in the first place — to pay it forward.
 
-Massive thanks to all the authors!
-
----
+Massive thanks to all the authors and fellow devs! You all rock!
 
 ### “Okay, but why should I follow this tutorial?”
 
@@ -38,8 +40,6 @@ I wanted to learn Metal from the ground up *and* help fill this gap in the ecosy
 
 If it helps you, then mission accomplished.
 
----
-
 ### Support This Project
 
 **Learn Metal** is — and always will be — completely free.  
@@ -49,14 +49,12 @@ If you find it useful and want to support my work, consider buying me a coffee:
 
 Thank you!
 
----
-
 ### Bonus: Simple Tutorial-Writing Reference
 
 This section serves as a quick, practical guide for writing tutorials using Just the Docs features. 
 I use it myself too, so feel free to reference it whenever you write content here!
 
-### 📘 Headings
+### - Headings
 
 ```markdown
 # H1
@@ -72,7 +70,7 @@ Result:
 ### H3
 #### H4
 
-### 💡 Alerts (Callouts)
+### - Alerts (Callouts)
 
 ```
 {: .note }
@@ -102,9 +100,7 @@ Result:
 {: .tip }
 > Here’s a tip.
 
----
-
-#### ✅ Task Lists
+### - Task Lists
 
 ```markdown
 - [x] Write documentation
@@ -116,9 +112,8 @@ Result:
 - [x] Write documentation  
 - [ ] Build a Metal renderer
 
----
 
-#### 📦 Code Blocks
+### - Code Blocks
 
 <pre><code>```swift
 let device = MTLCreateSystemDefaultDevice()
@@ -130,7 +125,7 @@ Result:
 let device = MTLCreateSystemDefaultDevice()
 ```
 
-#### 🧭 Navigation and Links
+### - Navigation and Links
 
 ```markdown
 [Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
@@ -142,7 +137,7 @@ Result:
 - [Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
 - [Main Page](https://www.learnmetal.com/)
 
-#### 📐 Tables
+### - Tables
 
 ```markdown
 | API | Description |
@@ -158,7 +153,7 @@ Result:
 | `MTLDevice` | The GPU abstraction |
 | `MTLCommandQueue` | Queue for commands |
 
-#### 🧲 Buttons
+### - Buttons
 
 ```markdown
 [Learn Metal](https://www.learnmetal.com){: .btn .btn-primary}
@@ -170,13 +165,13 @@ Rendered:
 [Learn Metal](https://www.learnmetal.com){: .btn .btn-primary}
 [GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
 
-#### ⚙️ Inline Code
+### - Inline Code
 
 ```markdown
 Use `MTLRenderCommandEncoder` to encode your draw calls.
 ```
 
-#### 📎 File Tree (Manual layout)
+### - File Tree (Manual layout)
 
 ```markdown
 📂 LearnMetal  
@@ -186,7 +181,7 @@ Use `MTLRenderCommandEncoder` to encode your draw calls.
 ├── _config.yml
 ```
 
-#### 🖼️ Images
+### - Images
 
 ```markdown
 ![Splash Logo](assets/images/splash-logo-2.png)
@@ -194,7 +189,7 @@ Use `MTLRenderCommandEncoder` to encode your draw calls.
 
 ![Splash Logo](assets/images/splash-logo-2.png)
 
-#### ✏️ Emphasis
+### - Emphasis
 
 ```markdown
 **bold**, *italic*, ***bold and italic***, ~~strikethrough~~
@@ -203,6 +198,3 @@ Use `MTLRenderCommandEncoder` to encode your draw calls.
 Result:
 
 **bold**, *italic*, ***bold italic***, ~~strikethrough~~
-
----
-

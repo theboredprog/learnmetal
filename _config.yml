@@ -1,10 +1,12 @@
-title: Learn Metal
+title: learnmetal.com
 description: A modern, open-source tutorial site designed to teach Apple’s Metal graphics API
 
 remote_theme: just-the-docs/just-the-docs
 #theme: just-the-docs
 
 permalink: pretty
+
+#logo: "assets/images/logo-big.png"
 
 favicon_ico: "/assets/images/favicon.ico"
 

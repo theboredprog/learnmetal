@@ -1,0 +1,72 @@
+<!-- This file serves as a temp progress bar to show users how much before the website is finished and polished, ready to use -->
+
+<ul id="todo-list" style="display: none;">
+<!-- Setup -->
+<li><input type="checkbox" checked> Intro tutorial (WIP)</li>
+<li><input type="checkbox"> Environment setup</li>
+<li><input type="checkbox"> Metal basics and pipeline overview</li>
+
+<!-- First render -->
+<li><input type="checkbox"> Draw a triangle</li>
+<li><input type="checkbox"> Render loop & frame management</li>
+<li><input type="checkbox"> Clearing the screen</li>
+
+<!-- Input -->
+<li><input type="checkbox"> Keyboard input</li>
+<li><input type="checkbox"> Mouse input</li>
+
+<!-- 2D Graphics -->
+<li><input type="checkbox"> Drawing 2D shapes</li>
+<li><input type="checkbox"> Text rendering</li>
+<li><input type="checkbox"> Textures in 2D</li>
+
+<!-- 3D Basics -->
+<li><input type="checkbox"> Coordinate systems</li>
+<li><input type="checkbox"> Basic 3D transformations</li>
+<li><input type="checkbox"> Camera movement</li>
+<li><input type="checkbox"> Perspective projection</li>
+
+<!-- 3D Models -->
+<li><input type="checkbox"> Loading 3D models</li>
+<li><input type="checkbox"> Vertex buffers and index buffers</li>
+<li><input type="checkbox"> Basic lighting</li>
+<li><input type="checkbox"> Materials and textures</li>
+
+<!-- Intermediate -->
+<li><input type="checkbox"> Multiple objects</li>
+<li><input type="checkbox"> Framebuffers</li>
+<li><input type="checkbox"> Depth and stencil testing</li>
+
+<!-- Advanced Topics -->
+<li><input type="checkbox"> Shader optimization</li>
+<li><input type="checkbox"> Post-processing effects</li>
+<li><input type="checkbox"> Compute shaders</li>
+<li><input type="checkbox"> Metal integration with UIKit/SwiftUI</li>
+
+<!-- Project Architecture -->
+<li><input type="checkbox"> Organizing code with OOP</li>
+<li><input type="checkbox"> Scene management</li>
+<li><input type="checkbox"> ECS / Game loop architecture</li>
+
+<!-- Final Polish -->
+<li><input type="checkbox"> Example project: rotating cube</li>
+<li><input type="checkbox"> Example project: 3D model viewer</li>
+<li><input type="checkbox"> Performance tuning</li> 
+</ul>
+
+<p id="progress-text">Progress: 0%</p>
+<div style="background: #eee; border-radius: 10px; width: 100%; max-width: 400px;">
+  <div id="progress-bar" style="height: 20px; width: 0%; background: #007ACC; border-radius: 10px;"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkboxes = document.querySelectorAll("#todo-list input[type='checkbox']");
+  const total = checkboxes.length;
+  const done = Array.from(checkboxes).filter(cb => cb.checked).length;
+  const percent = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  document.getElementById("progress-bar").style.width = percent + "%";
+  document.getElementById("progress-text").textContent = `Progress: ${done}/${total} (${percent}%)`;
+});
+</script>
