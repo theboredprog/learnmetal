@@ -161,13 +161,13 @@ Result:
 #### 🧲 Buttons
 
 ```markdown
-[Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %}){: .btn .btn-primary }
+[Learn Metal](https://www.learnmetal.com){: .btn .btn-primary}
 [GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
 ```
 
 Rendered:
 
-Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %}){: .btn .btn-primary }
+[Learn Metal](https://www.learnmetal.com){: .btn .btn-primary}
 [GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
 
 #### ⚙️ Inline Code
