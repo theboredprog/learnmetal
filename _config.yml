@@ -6,9 +6,9 @@ remote_theme: just-the-docs/just-the-docs
 
 permalink: pretty
 
-#logo: "assets/images/logo-big.png"
-
 favicon_ico: "/assets/images/favicon.ico"
+
+color_scheme: dark
 
 highlighter: rouge
 
@@ -65,9 +65,7 @@ footer_content: 'Copyright &copy; 2025 Gabriele Vierti. Distributed by an <a hre
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y at %I:%M %p"
 
-color_scheme: nil
-
-callouts_level: quiet
+callouts_level: loud
 callouts:
   highlight:
     color: yellow
