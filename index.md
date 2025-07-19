@@ -48,3 +48,165 @@ If you find it useful and want to support my work, consider buying me a coffee:
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="theboredprog" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
 Thank you!
+
+---
+
+### Tutorial Writing Reference
+
+This is just a section as a live reference when writing your tutorials (or mine, since i use it too hehe!)
+
+---
+
+#### 📘 Headings
+
+```markdown
+# H1
+## H2
+### H3
+#### H4
+```
+
+#### 💡 Alerts (Callouts)
+
+```
+{: .note }
+> This is a note.
+
+{: .warning }
+> This is a warning.
+
+{: .important }
+> This is important!
+
+{: .tip }
+> Here’s a tip.
+```
+
+Example:
+
+{: .tip }
+> Use `.tip`, `.note`, `.important`, or `.warning` after a paragraph or quote to get styled callouts.
+
+---
+
+#### ✅ Task Lists
+
+```markdown
+- [x] Write documentation
+- [ ] Build a Metal renderer
+```
+
+Rendered:
+
+- [x] Write documentation  
+- [ ] Build a Metal renderer
+
+---
+
+#### 📦 Code Blocks
+
+<pre><code>```swift
+let device = MTLCreateSystemDefaultDevice()
+```</code></pre>
+
+Result:
+
+```swift
+let device = MTLCreateSystemDefaultDevice()
+```
+
+Use `{: .no-copy }` to disable the copy button:
+
+```markdown
+```swift {: .no-copy }
+let secret = "don't copy me"
+```
+```
+
+---
+
+#### 🧭 Navigation and Links
+
+```markdown
+[Link]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
+[Link2](https://www.learnmetal.com/)
+```
+
+Result: 
+
+[Link]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
+[Link2](https://www.learnmetal.com/)
+
+---
+
+#### 📐 Tables
+
+```markdown
+| API | Description |
+|-----|-------------|
+| `MTLDevice` | The GPU abstraction |
+| `MTLCommandQueue` | Queue for commands |
+```
+
+Result:
+
+| API | Description |
+|-----|-------------|
+| `MTLDevice` | The GPU abstraction |
+| `MTLCommandQueue` | Queue for commands |
+
+---
+
+#### 🧲 Buttons
+
+```markdown
+[Start Tutorial](getting-started.md){: .btn .btn-primary }
+[GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
+```
+
+Rendered:
+
+[Start Tutorial](getting-started.md){: .btn .btn-primary }
+[GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
+
+---
+
+#### ⚙️ Inline Code
+
+```markdown
+Use `MTLRenderCommandEncoder` to encode your draw calls.
+```
+
+---
+
+#### 📎 File Tree (Manual layout)
+
+```markdown
+📂 LearnMetal  
+├── 📁 docs  
+│   ├── 01-setup.md  
+│   ├── 02-draw.md  
+├── _config.yml
+```
+
+---
+
+#### 🖼️ Images
+
+```markdown
+![Splash Logo](assets/images/splash-logo-2.png)
+```
+
+---
+
+#### ✏️ Emphasis
+
+```markdown
+**bold**, *italic*, ***bold italic***
+```
+
+Result:
+
+**bold**, *italic*, ***bold italic***
+
+---
