@@ -120,8 +120,6 @@ Result:
 
 #### 📦 Code Blocks
 
-Swift:
-
 <pre><code>```swift
 let device = MTLCreateSystemDefaultDevice()
 ```</code></pre>
@@ -130,28 +128,6 @@ Result:
 
 ```swift
 let device = MTLCreateSystemDefaultDevice()
-```
-
-C++:
-
-<pre><code>```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Hello, Metal!" << std::endl;
-    return 0;
-}
-```</code></pre>
-
-Result:
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Hello, Metal!" << std::endl;
-    return 0;
-}
 ```
 
 Use `{: .no-copy }` to disable the copy button:
