@@ -33,7 +33,7 @@ We'll also make use of **Objective-C++**, a hybrid that allows both languages to
 
 ## Step 1: Install Xcode
 
-![step1](step1.png)
+![step1](assets/step1.png)
 
 If you haven’t already, download Xcode from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835) or from the [Apple Developer site](https://developer.apple.com/xcode/).
 
@@ -54,7 +54,7 @@ Download Apple’s official [metal-cpp bindings](https://developer.apple.com/met
 3. Set the product name to something like `MyMetalApp`
 4. Select **C++** as the language
 
-![step2](step2.png)
+![step2](assets/step2.png)
 
 This will create a simple terminal-based C++ app as your starting point.
 
@@ -68,8 +68,8 @@ Make sure:
 - You **copy items if needed**
 - The **target** is set to your app (`MyMetalApp`)
 
-![step3](step4.png)  
-![step4](step3.png)
+![step3](assets/step4.png)  
+![step4](assets/step3.png)
 
 ---
 
@@ -81,7 +81,7 @@ We need to tell Xcode where to find the `metal-cpp` headers.
 2. Go to **Build Settings**
 3. Set **Always Search User Paths** to `Yes`
 
-![step5](step5.png)
+![step5](assets/step5.png)
 
 4. Still in **Build Settings**, search for `Header Search Paths`
 5. Add the following entry:
@@ -89,7 +89,7 @@ We need to tell Xcode where to find the `metal-cpp` headers.
 $(PROJECT_DIR)/metal-cpp
 ```
 
-![step6](step6.png)
+![step6](assets/step6.png)
 
 ---
 

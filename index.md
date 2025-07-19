@@ -6,15 +6,13 @@ nav_order: 0
 
 # Welcome to Learn Metal
 
-<<<<<<< Updated upstream
 **Learn Metal** is a personal, open-source project dedicated to teaching Apple’s Metal graphics API — especially its latest version.  
 Whether you're diving into graphics programming for fun, study, or your next big idea, feel free to explore this site. I’m building it in my spare time, purely out of passion for coding and sharing what I learn along the way.
-=======
-![splash-logo-1](splash-logo-2.png)
+
+![splash-logo-1](assets/images/splash-logo-2.png)
 
 Welcome to **Learn Metal**, an open-source tutorial site dedicated to learning and mastering Apple’s Metal graphics API, specifically its newest iteration.
 Whether you are interested in learning Metal for academic purposes or just as a hobby for your personal projects, feel free to explore this website i'm making in my free time, purely for the love of programming and sharing what i learn along the way :)
->>>>>>> Stashed changes
 
 ---
 
