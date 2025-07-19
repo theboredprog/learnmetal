@@ -51,13 +51,12 @@ Thank you!
 
 ---
 
-### Tutorial Writing Reference
+### Bonus: Simple Tutorial-Writing Reference
 
-This is just a section as a live reference when writing your tutorials (or mine, since i use it too hehe!)
+This section serves as a quick, practical guide for writing tutorials using Just the Docs features. 
+I use it myself too, so feel free to reference it whenever you write content here!
 
----
-
-#### 📘 Headings
+### 📘 Headings
 
 ```markdown
 # H1
@@ -66,7 +65,14 @@ This is just a section as a live reference when writing your tutorials (or mine,
 #### H4
 ```
 
-#### 💡 Alerts (Callouts)
+Result:
+
+# H1
+## H2
+### H3
+#### H4
+
+### 💡 Alerts (Callouts)
 
 ```
 {: .note }
@@ -82,10 +88,19 @@ This is just a section as a live reference when writing your tutorials (or mine,
 > Here’s a tip.
 ```
 
-Example:
+Result:
+
+{: .note }
+> This is a note.
+
+{: .warning }
+> This is a warning.
+
+{: .important }
+> This is important!
 
 {: .tip }
-> Use `.tip`, `.note`, `.important`, or `.warning` after a paragraph or quote to get styled callouts.
+> Here’s a tip.
 
 ---
 
@@ -96,7 +111,7 @@ Example:
 - [ ] Build a Metal renderer
 ```
 
-Rendered:
+Result:
 
 - [x] Write documentation  
 - [ ] Build a Metal renderer
@@ -104,6 +119,8 @@ Rendered:
 ---
 
 #### 📦 Code Blocks
+
+Swift:
 
 <pre><code>```swift
 let device = MTLCreateSystemDefaultDevice()
@@ -115,29 +132,45 @@ Result:
 let device = MTLCreateSystemDefaultDevice()
 ```
 
+C++:
+
+<pre><code>```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, Metal!" << std::endl;
+    return 0;
+}
+```</code></pre>
+
+Result:
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, Metal!" << std::endl;
+    return 0;
+}
+```
+
 Use `{: .no-copy }` to disable the copy button:
 
-```markdown
 ```swift {: .no-copy }
 let secret = "don't copy me"
 ```
-```
-
----
 
 #### 🧭 Navigation and Links
 
 ```markdown
-[Link]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
-[Link2](https://www.learnmetal.com/)
+[Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
+[Main Page](https://www.learnmetal.com/)
 ```
 
 Result: 
 
-[Link]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
-[Link2](https://www.learnmetal.com/)
-
----
+- [Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %})
+- [Main Page](https://www.learnmetal.com/)
 
 #### 📐 Tables
 
@@ -155,29 +188,23 @@ Result:
 | `MTLDevice` | The GPU abstraction |
 | `MTLCommandQueue` | Queue for commands |
 
----
-
 #### 🧲 Buttons
 
 ```markdown
-[Start Tutorial](getting-started.md){: .btn .btn-primary }
+[Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %}){: .btn .btn-primary }
 [GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
 ```
 
 Rendered:
 
-[Start Tutorial](getting-started.md){: .btn .btn-primary }
+Setting Up Tutorial]({{ site.baseurl }}{% link docs/01-setting-up/01-setting-up.md %}){: .btn .btn-primary }
 [GitHub Repo](https://github.com/theboredprog/learnmetal){: .btn }
-
----
 
 #### ⚙️ Inline Code
 
 ```markdown
 Use `MTLRenderCommandEncoder` to encode your draw calls.
 ```
-
----
 
 #### 📎 File Tree (Manual layout)
 
@@ -189,24 +216,23 @@ Use `MTLRenderCommandEncoder` to encode your draw calls.
 ├── _config.yml
 ```
 
----
-
 #### 🖼️ Images
 
 ```markdown
 ![Splash Logo](assets/images/splash-logo-2.png)
 ```
 
----
+![Splash Logo](assets/images/splash-logo-2.png)
 
 #### ✏️ Emphasis
 
 ```markdown
-**bold**, *italic*, ***bold italic***
+**bold**, *italic*, ***bold and italic***, ~~strikethrough~~
 ```
 
 Result:
 
-**bold**, *italic*, ***bold italic***
+**bold**, *italic*, ***bold italic***, ~~strikethrough~~
 
 ---
+

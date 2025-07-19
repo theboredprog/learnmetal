@@ -1,8 +1,8 @@
-# 01 – Setting up your enviroment
+# 01 – Setting up your environment
 
-Whooohooo! 🥳
+Whooohooo! 🥳  
 Welcome to your very first few steps into Metal development on macOS!
- 
+
 This tutorial will hopefully help you set up a proper and efficient development environment so you can start building high-performance graphics applications.
 
 ## Why Xcode?
@@ -49,9 +49,9 @@ Download Apple’s official [metal-cpp bindings](https://developer.apple.com/met
 
 ## Step 3: Create a New Xcode Project
 
-1. Open **Xcode**
-2. Go to: `File → New → Project → macOS → Command Line Tool`
-3. Set the product name to something like `MyMetalApp`
+1. Open **Xcode**  
+2. Go to: `File → New → Project → macOS → Command Line Tool`  
+3. Set the product name to something like `MyMetalApp`  
 4. Select **C++** as the language
 
 ![step2](assets/step2.png)
@@ -64,12 +64,12 @@ This will create a simple terminal-based C++ app as your starting point.
 
 Drag and drop the downloaded `metal-cpp` folder into your project.
 
-Make sure:
-- You **copy items if needed**
+Make sure:  
+- You **copy items if needed**  
 - The **target** is set to your app (`MyMetalApp`)
 
-![step3](assets/step4.png)  
-![step4](assets/step3.png)
+![step3](assets/step3.png)  
+![step4](assets/step4.png)
 
 ---
 
@@ -77,14 +77,15 @@ Make sure:
 
 We need to tell Xcode where to find the `metal-cpp` headers.
 
-1. Select the **target** (`MyMetalApp`)
-2. Go to **Build Settings**
+1. Select the **target** (`MyMetalApp`)  
+2. Go to **Build Settings**  
 3. Set **Always Search User Paths** to `Yes`
 
 ![step5](assets/step5.png)
 
-4. Still in **Build Settings**, search for `Header Search Paths`
+4. Still in **Build Settings**, search for `Header Search Paths`  
 5. Add the following entry:
+
 ```bash
 $(PROJECT_DIR)/metal-cpp
 ```
